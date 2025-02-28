@@ -183,10 +183,18 @@
 			#toggle-settings:active {
 				transform: scale(0.9);
 			}
+			.desktop-only {
+				display: none;
+			}
+			@media (min-width: 700px) {
+				.desktop-only {
+					display: block;
+				}
+			}
 		</style>
 	</head>
 	<body>
-		<img src="lake.jpg" alt="lake" />
+		<img src="lake.png" alt="oregon" class="desktop-only" />
 		<div class="row">
 			<div class="left-container">
 				<div class="time-container">
@@ -207,33 +215,33 @@
 			</div>
 			<div class="link-container">
 				<div class="col">
-					<a href="https://mail.google.com/mail/u/0/#inbox">gmail</a>
-					<a href="https://calendar.google.com/calendar/u/0/r"
-						>calendar</a
+					<a href="https://learn.comptia.org">comptia</a>
+					<a href="https://hse.instructure.com"
+						>canvas</a
 					>
-					<a href="https://keep.google.com/u/0/">keep</a>
+					<a href="https://office.com">office</a>
 				</div>
-				<div class="col">
+				<!-- <div class="col">
 					<a href="https://drive.google.com/drive/u/0/home">drive</a>
 					<a href="https://docs.google.com/document/u/0/">docs</a>
 					<a href="https://docs.google.com/spreadsheets/u/0/"
 						>sheets</a
 					>
-				</div>
+				</div> -->
 				<div class="col">
-					<a href="https://www.reddit.com/">reddit</a>
+					<a href="https://en.wikipedia.org/">wikipedia</a>
 					<a href="https://www.youtube.com/">youtube</a>
-					<a href="https://www.instagram.com/">insta</a>
-				</div>
-				<div class="col">
 					<a href="https://github.com/">github</a>
+				</div>
+				<!-- <div class="col">
+					<a href="https://www.instagram.com/"></a>
 					<a href="https://slack.com/">slack</a>
 					<a href="https://feedly.com/">feedly</a>
-				</div>
+				</div> -->
 				<div class="col">
-					<a href="https://claude.ai/">claude</a>
-					<a href="https://gemini.google.com/u/0/">gemini</a>
-					<a href="https://chat.openai.com/">chatgpt</a>
+					<a href="https://chat.deepseek.com">spyware</a>
+					<a href="https://gemini.google.com/u/0/">meh</a>
+					<a href="https://chat.openai.com/">closedai</a>
 				</div>
 			</div>
 		</div>

@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	const settings = JSON.parse(localStorage.getItem('settings'))
 
 	if (!settings) {
-		settingsForm.style.display = 'block'
+		settingsForm.style.display = 'none'
 	} else {
 		settingsForm.style.display = 'none'
 		toggleSettingsButton.style.display = 'block'
@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	toggleSettingsButton.addEventListener('click', () => {
 		if (settingsForm.style.display === 'none') {
-			settingsForm.style.display = 'block'
+			settingsForm.style.display = 'none'
 		} else {
 			settingsForm.style.display = 'none'
 		}
@@ -40,10 +40,10 @@ document.getElementById('settings-form').addEventListener('submit', (event) => {
 })
 
 const settings = JSON.parse(localStorage.getItem('settings')) || {
-	lat: '0',
-	lon: '0',
+	lat: '39.956779',
+	lon: '-86.015549',
 	units: 'fahrenheit',
-	timeFormat: '12',
+	timeFormat: '24',
 }
 
 let lat = settings.lat
